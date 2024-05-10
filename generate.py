@@ -13,7 +13,7 @@ prompt_file = "prompt.txt"
 
 # Charger le fichier prompt
 text = load_prompt(prompt_file)
-
+efs
 # Créer le modèle Markovify
 model = markovify.Text(text)
 
