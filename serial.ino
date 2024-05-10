@@ -16,10 +16,11 @@ void setup() {
 }
 
 void loop() {
-  
-  prompt = Serial.readString();
-
-  printer.println();  
+    if (Serial.available() > 0)
+  {
+    prompt = Serial.readString();
+    printer.println(prompt);
+    printer.println();  
 }
 
     
