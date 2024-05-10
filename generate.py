@@ -13,13 +13,14 @@ prompt_file = "prompt.txt"
 
 # Charger le fichier prompt
 text = load_prompt(prompt_file)
-efs
+
 # Créer le modèle Markovify
 model = markovify.Text(text)
+time.sleep(10)
 
 # Configuration du port série
 ser = serial.Serial('COM9', 9600)  # Remplacez 'COM3' par le port série de votre Arduino
-
+time.sleep(10)
 
 # Générer une phrase aléatoire
 sentence = model.make_sentence()
@@ -28,5 +29,5 @@ sentence = model.make_sentence()
 ser.write((sentence + '\n').encode('utf-8'))
 
 # Attendre un court instant avant de générer la prochaine phrase
-time.sleep(1)
+time.sleep(10)
 print(sentence)
