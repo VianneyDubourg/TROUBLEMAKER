@@ -1,69 +1,69 @@
-Action ou Vérité : Changez de vêtements avec la personne à votre gauche.
-Action ou Vérité : Écrivez un poème sur le thème de l'amour en 5 minutes.
-Action ou Vérité : Faites une imitation de votre professeur préféré.
-Action ou Vérité : Révélez votre pire habitude alimentaire.
-Action ou Vérité : Décrivez votre dernière conversation téléphonique embarrassante.
-Action ou Vérité : Faites une grimace drôle et tenez-la pendant 30 secondes.
-Action ou Vérité : Racontez une anecdote honteuse de votre enfance.
-Action ou Vérité : Faites une déclaration d'amour à un objet inanimé.
-Action ou Vérité : Dansez la danse de la pluie pendant 1 minute.
-Action ou Vérité : Décrivez votre dernier rêve étrange.
-Action ou Vérité : Faites une chanson sur le thème des pâtes.
-Action ou Vérité : Présentez une fausse conférence sur un sujet farfelu.
-Action ou Vérité : Racontez votre pire date jamais.
-Action ou Vérité : Faites un discours de remerciement à votre animal de compagnie.
-Action ou Vérité : Révélez votre plus grande peur irrationnelle.
-Action ou Vérité : Mimez une scène célèbre d'un film.
-Action ou Vérité : Racontez une blague terrible.
-Action ou Vérité : Faites semblant d'être un super-héros et dites votre cri de guerre.
-Action ou Vérité : Faites un compliment à la personne assise à votre droite.
-Action ou Vérité : Faites une danse de la victoire.
-Action ou Vérité : Faites semblant d'être un présentateur de télévision et interviewez-vous.
-Action ou Vérité : Dites la première chose qui vous vient à l'esprit.
-Action ou Vérité : Faites une liste de 5 choses que vous aimez chez vous.
-Action ou Vérité : Révélez votre plus grande bêtise à l'école.
-Action ou Vérité : Racontez une histoire effrayante.
-Action ou Vérité : Faites un vœu à voix haute.
-Action ou Vérité : Dansez la Macarena.
-Action ou Vérité : Dites une blague de papa.
-Action ou Vérité : Faites une impression de votre personnage de dessin animé préféré.
-Action ou Vérité : Chantez votre chanson préférée à l'envers.
-Action ou Vérité : Révélez la dernière photo embarrassante que vous avez prise.
-Action ou Vérité : Faites une déclaration d'amour en utilisant uniquement des mots de 3 lettres.
-Action ou Vérité : Dites quelque chose que vous n'avez jamais dit à personne auparavant.
-Action ou Vérité : Faites une danse disco.
-Action ou Vérité : Racontez un secret que vous n'avez jamais dit à personne.
-Action ou Vérité : Faites une imitation de votre enseignant le plus ennuyeux.
-Action ou Vérité : Inventez un slogan pour une marque de dentifrice.
-Action ou Vérité : Racontez votre rêve le plus bizarre.
-Action ou Vérité : Décrivez votre rituel matinal le plus étrange.
-Action ou Vérité : Faites un monologue sur la dernière fois que vous avez ri aux éclats.
-Action ou Vérité : Révélez le mensonge le plus ridicule que vous avez dit pour vous sortir d'une situation embarrassante.
-Action ou Vérité : Faites un dessin à l'aveugle de la personne assise en face de vous.
-Action ou Vérité : Décrivez votre rêve de vie idéale en trois mots.
-Action ou Vérité : Racontez une expérience culinaire que vous avez trouvée délicieuse, mais que tout le monde trouve étrange.
-Action ou Vérité : Faites une déclaration poétique sur votre plat préféré.
-Action ou Vérité : Décrivez votre plus grande peur d'enfance, même si elle semble ridicule maintenant.
-Action ou Vérité : Faites une danse de célébration comme si vous veniez de remporter un prix.
-Action ou Vérité : Écrivez un mini poème sur un objet banal autour de vous.
-Action ou Vérité : Révélez la chose la plus étrange que vous ayez faite par amour.
-Action ou Vérité : Imiter la voix d'un personnage célèbre en lisant une recette de cuisine.
-Action ou Vérité : Faites une danse du ventre improvisée.
-Action ou Vérité : Dites à haute voix la dernière pensée qui vous est venue en vous réveillant ce matin.
-Action ou Vérité : Révélez le pire mensonge que vous avez dit à vos parents dans votre enfance.
-Action ou Vérité : Faites une imitation d'un animal et laissez les autres deviner lequel.
-Action ou Vérité : Racontez une histoire drôle qui vous est arrivée lors d'une réunion importante.
-Action ou Vérité : Faites une déclaration d'amour à votre plat préféré.
-Action ou Vérité : Inventez un cri de guerre pour votre équipe préférée.
-Action ou Vérité : Chantez une chanson populaire dans une langue étrangère que vous ne connaissez pas.
-Action ou Vérité : Révélez la chose la plus absurde que vous ayez dite en étant ivre.
-Action ou Vérité : Faites une impression hilarante d'un membre de votre famille.
-Action ou Vérité : Énumérez trois choses que vous ne pourriez pas vivre sans.
-Action ou Vérité : Mimez une scène de film célèbre sans utiliser de mots.
-Action ou Vérité : Faites une déclaration d'amour à un objet inanimé en lui donnant un surnom mignon.
-Action ou Vérité : Révélez la dernière chose qui vous a fait pleurer.
-Action ou Vérité : Faites un discours d'acceptation pour un prix imaginaire.
-Action ou Vérité : Imiter le rire d'une personne célèbre.
-Action ou Vérité : Faites une danse de la pluie en utilisant uniquement vos bras.
-Action ou Vérité : Racontez une histoire embarrassante de votre adolescence.
-Action ou Vérité : Faites une imitation de votre célébrité préférée en train de pleurer.
+Changez de vetements avec la personne a votre gauche.
+Ecrivez un poeme sur le theme de l'amour en 5 minutes.
+Faites une imitation de votre professeur prefere.
+Revelez votre pire habitude alimentaire.
+Decrivez votre derniere conversation telephonique embarrassante.
+Faites une grimace drole et tenez-la pendant 30 secondes.
+Racontez une anecdote honteuse de votre enfance.
+Faites une declaration d'amour a un objet inanime.
+Dansez la danse de la pluie pendant 1 minute.
+Decrivez votre dernier reve etrange.
+Faites une chanson sur le theme des pates.
+Presentez une fausse conference sur un sujet farfelu.
+Racontez votre pire date jamais.
+Faites un discours de remerciement a votre animal de compagnie.
+Revelez votre plus grande peur irrationnelle.
+Mimez une scene celebre d'un film.
+Racontez une blague terrible.
+Faites semblant d'etre un super-heros et dites votre cri de guerre.
+Faites un compliment a la personne assise a votre droite.
+Faites une danse de la victoire.
+Faites semblant d'etre un presentateur de television et interviewez-vous.
+Dites la premiere chose qui vous vient a l'esprit.
+Faites une liste de 5 choses que vous aimez chez vous.
+Revelez votre plus grande betise a l'ecole.
+Racontez une histoire effrayante.
+Faites un voeu a voix haute.
+Dansez la Macarena.
+Dites une blague de papa.
+Faites une impression de votre personnage de dessin anime prefere.
+Chantez votre chanson preferee a l'envers.
+Revelez la derniere photo embarrassante que vous avez prise.
+Faites une declaration d'amour en utilisant uniquement des mots de 3 lettres.
+Dites quelque chose que vous n'avez jamais dit a personne auparavant.
+Faites une danse disco.
+Racontez un secret que vous n'avez jamais dit a personne.
+Faites une imitation de votre enseignant le plus ennuyeux.
+Inventez un slogan pour une marque de dentifrice.
+Racontez votre reve le plus bizarre.
+Decrivez votre rituel matinal le plus etrange.
+Faites un monologue sur la derniere fois que vous avez ri aux eclats.
+Revelez le mensonge le plus ridicule que vous avez dit pour vous sortir d'une situation embarrassante.
+Faites un dessin a l'aveugle de la personne assise en face de vous.
+Decrivez votre reve de vie ideale en trois mots.
+Racontez une experience culinaire que vous avez trouvee delicieuse, mais que tout le monde trouve etrange.
+Faites une declaration poetique sur votre plat prefere.
+Decrivez votre plus grande peur d'enfance, meme si elle semble ridicule maintenant.
+Faites une danse de celebration comme si vous veniez de remporter un prix.
+Ecrivez un mini poeme sur un objet banal autour de vous.
+Revelez la chose la plus etrange que vous ayez faite par amour.
+Imiter la voix d'un personnage celebre en lisant une recette de cuisine.
+Faites une danse du ventre improvisee.
+Dites a haute voix la derniere pensee qui vous est venue en vous reveillant ce matin.
+Revelez le pire mensonge que vous avez dit a vos parents dans votre enfance.
+Faites une imitation d'un animal et laissez les autres deviner lequel.
+Racontez une histoire drôle qui vous est arrivee lors d'une reunion importante.
+Faites une declaration d'amour a votre plat prefere.
+Inventez un cri de guerre pour votre equipe preferee.
+Chantez une chanson populaire dans une langue etrangere que vous ne connaissez pas.
+Revelez la chose la plus absurde que vous ayez dite en etant ivre.
+Faites une impression hilarante d'un membre de votre famille.
+Enumerez trois choses que vous ne prriez pas vivre sans.
+Mimez une scene de film celebre sans utiliser de mots.
+Faites une declaration d'amour a un objet inanime en lui donnant un surnom mignon.
+Revelez la derniere chose qui vous a fait pleurer.
+Faites un discours d'acceptation pour un prix imaginaire.
+Imiter le rire d'une personne celebre.
+Faites une danse de la pluie en utilisant uniquement vos bras.
+Racontez une histoire embarrassante de votre adolescence.
+Faites une imitation de votre celebrite preferee en train de pleurer.
