@@ -21,6 +21,7 @@ void loop() {
     if (Serial.available() > 0) // Condition sur l'arrivée d'informations
   {
     prompt = Serial.readString(); // Lecture des données 
+    printer.boldOn();
     printer.println(prompt); // Impression des données
     printer.println(); // Saut d'une ligne 
 }
