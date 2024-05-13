@@ -18,16 +18,29 @@ text = load_prompt(prompt_file)
 model = markovify.Text(text)
 
 # Configuration du port série
-ser = serial.Serial('COM9', 9600)  # Remplacez 'COM3' par le port série de votre Arduino
-
-# Attendre un court instant avant de générer la prochaine phrase
-time.sleep(2)
+ser = serial.Serial('COM3', 9600)  # Remplacez 'COM3' par le port série de votre Arduino
 
 # Générer une phrase aléatoire
 sentence = model.make_sentence()
 
-# Envoyer la phrase sur le port série de l'Arduino
-ser.write((sentence + '\n').encode())
+# Attendre un court instant avant de générer la prochaine phrase
+time.sleep(2) #On en a besoin
 
-# Ecrire la phrase dans l'interface pour vérifier
+# Envoyer une entête sur le port série de l'Arduino
+ser.write(("----------").encode())
+time.sleep(4)
+
+# Fonction pour couper les phrases en groupe de 4
+def splitTextToTriplet(string):
+    words = string.split()
+    grouped_words = [' '.join(words[i: i + 4]) for i in range(0, len(words), 4)]
+    return grouped_words
+
+# Envoyer la phrase sur le port série de l'Arduino par groupe de 4
+for groupe in splitTextToTriplet(str(sentence)):
+    ser.write((groupe).encode())
+    time.sleep(4)
+
+# Ecrire la phrase pour vérifier
 print(sentence)
+print(splitTextToTriplet(str(sentence)))
