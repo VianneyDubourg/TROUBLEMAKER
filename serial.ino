@@ -8,6 +8,8 @@ String prompt;
 
 SoftwareSerial mySerial(RX_PIN, TX_PIN); // RX, TX
 Adafruit_Thermal printer(&mySerial);
+int heat_time = 1200000000;
+Adafruit_Thermal warm_up(heat_time); // Echauffement de l'imprimante
 
 void setup() {
   Serial.begin(9600);
