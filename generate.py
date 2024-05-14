@@ -24,7 +24,7 @@ ser = serial.Serial('COM3', 9600)  # Remplacez 'COM3' par le port série de votr
 sentence = model.make_sentence()
 
 # Attendre un court instant avant de générer la prochaine phrase
-time.sleep(2) #On en a besoin
+time.sleep(2)
 
 # Envoyer une entête sur le port série de l'Arduino
 ser.write(("----------").encode())
