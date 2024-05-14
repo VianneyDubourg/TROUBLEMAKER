@@ -18,6 +18,21 @@ void setup() {
 }
 
 void loop() {
+
+  // Lire les valeurs des ports analogiques
+  int analogValueA0 = analogRead(A0);
+  int analogValueA1 = analogRead(A1);
+  int analogValueA2 = analogRead(A2);
+
+  // Envoyer les valeurs via le port série
+  Serial.print(analogValueA0);
+  Serial.print(",");
+  Serial.print(analogValueA1);
+  Serial.print(",");
+  Serial.println(analogValueA2);
+
+  delay(100); // Délai pour éviter de surcharger le port série
+  
   if (Serial.available() > 0)
   {
     Adafruit_Thermal warm_up(heat_time);
@@ -25,5 +40,6 @@ void loop() {
     printer.setLineHeight(20);
     printer.boldOn();
     printer.println(prompt);
+    printer.feed();
 } 
 }
