@@ -44,6 +44,7 @@ model = markovify.Text(text)
 # Générer une phrase aléatoire cas particulier
 if prompt_file == 'dinosaures_nom.txt':
     sentence = main()
+    sentence = sentence.replace(' ','')
     time.sleep(2)
     ser.write(("----------").encode())
     time.sleep(2)
