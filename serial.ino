@@ -8,31 +8,37 @@ String prompt;
 
 SoftwareSerial mySerial(RX_PIN, TX_PIN); // RX, TX
 Adafruit_Thermal printer(&mySerial);
-int heat_time = 1200000000;
-Adafruit_Thermal warm_up(heat_time);
+int heat_time = 120000;
+Adafruit_Thermal warm_up(heat_time); // Echauffement de l'imprimante
 
 void setup() {
   Serial.begin(9600);
   mySerial.begin(9600);  // Vitesse de communication série
   printer.begin(); // Initialise l'imprimante thermique
+  pinMode(9, INPUT); // Ports en position de receveur
+  pinMode(10, INPUT);
+  pinMode(11, INPUT);
+  digitalWrite(9, HIGH); // Ouverture des ports
+  digitalWrite(10, HIGH);
+  digitalWrite(11, HIGH);
 }
 
 void loop() {
 
-  // Lire les valeurs des ports analogiques
-  int analogValueA0 = analogRead(A0);
-  int analogValueA1 = analogRead(A1);
-  int analogValueA2 = analogRead(A2);
+  // Lire les valeurs des ports numériques
+  int valeur0 = digitalRead(9);
+  int valeur1 = digitalRead(10);
+  int valeur2 = digitalRead(11);
 
   // Envoyer les valeurs via le port série
-  Serial.print(analogValueA0);
+  Serial.print(valeur0);
   Serial.print(",");
-  Serial.print(analogValueA1);
+  Serial.print(valeur1);
   Serial.print(",");
-  Serial.println(analogValueA2);
-
-  delay(100); // Délai pour éviter de surcharger le port série
+  Serial.println(valeur2);
+  delay(1000);
   
+  // Imprimer les phrases si on en reçoit une
   if (Serial.available() > 0)
   {
     Adafruit_Thermal warm_up(heat_time);
@@ -41,5 +47,6 @@ void loop() {
     printer.boldOn();
     printer.println(prompt);
     printer.feed();
+  delay(100);
 } 
 }
