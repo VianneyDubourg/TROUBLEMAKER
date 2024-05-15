@@ -1,6 +1,7 @@
 import markovify
 import serial
 import time
+from fonction_markov import MarkovChain, main
 
 # Connexion au arduino
 ser = serial.Serial('COM3', 9600)  # Assurez-vous de spécifier le bon port série
@@ -16,19 +17,23 @@ def load_prompt(file_path):
 while True:
     if ser.in_waiting > 0:
         line = ser.readline().decode('utf-8').rstrip()
-        values = line.split(",")
-        analogValueA0 = str(values[0])
-        analogValueA1 = str(values[1])
-        analogValueA2 = str(values[2])
-        if str(analogValueA0) == "0":
+        valeurs = line.split(",")
+        valeur0 = str(valeurs[0])
+        valeur1 = str(valeurs[1])
+        valeur2 = str(valeurs[2])
+        if str(valeur0) == "0":
             prompt_file = "prompt.txt"
             break
-        if str(analogValueA1) == "0":
+        if str(valeur1) == "0":
             prompt_file = "dinosaures.txt"
             break
-        if str(analogValueA2) == "0":
+        if str(valeur2) == "0":
             prompt_file = "citations.txt"
+            break
+        prompt_file = "rap.txt"
         break
+
+prompt_file = "dinosaures_nom.txt"
 
 # Charger le fichier prompt
 text = load_prompt(prompt_file)
@@ -36,13 +41,23 @@ text = load_prompt(prompt_file)
 # Créer le modèle Markovify
 model = markovify.Text(text)
 
-# Générer une phrase aléatoire
+# Générer une phrase aléatoire cas particulier
+if prompt_file == 'dinosaures_nom.txt':
+    sentence = main()
+    time.sleep(2)
+    ser.write(("----------").encode())
+    time.sleep(2)
+    ser.write((sentence).encode())
+    print(sentence)
+    exit()
+
+# Générer une phrase aléatoire cas classique
 sentence = model.make_sentence()
 
 # Attendre un court instant avant de générer la prochaine phrase
-time.sleep(1)
+time.sleep(2)
 
-# Envoyer une entête sur le port série de l'Arduino
+# Envoyer un entête sur le port série de l'Arduino
 ser.write(("----------").encode())
 time.sleep(2)
 
@@ -60,4 +75,4 @@ for groupe in splitTextToTriplet(str(sentence)):
 # Ecrire la phrase pour vérifier
 print(prompt_file)
 print(sentence)
-print(splitTextToTriplet(str(sentence)))
+
