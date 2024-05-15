@@ -63,13 +63,13 @@ ser.write(("----------").encode())
 time.sleep(2)
 
 # Fonction pour couper les phrases en groupe de 4
-def splitTextToTriplet(string):
+def splitTextToQuadruplet(string):
     words = string.split()
     grouped_words = [' '.join(words[i: i + 4]) for i in range(0, len(words), 4)]
     return grouped_words
 
 # Envoyer la phrase sur le port série de l'Arduino par groupe de 4
-for groupe in splitTextToTriplet(str(sentence)):
+for groupe in splitTextToQuadruplet(str(sentence)):
     ser.write((groupe).encode())
     time.sleep(3)
 
