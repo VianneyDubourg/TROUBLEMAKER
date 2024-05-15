@@ -1,6 +1,7 @@
 import markovify
 import serial
 import time
+import random
 from fonction_markov import MarkovChain, main
 
 # Connexion au arduino
@@ -30,6 +31,8 @@ while True:
         if str(valeur2) == "0":
             prompt_file = "citations.txt"
             break
+        if str(valeurX) == "0":
+            prompt_file = "random.txt"
         prompt_file = "rap.txt"
         break
 
@@ -41,7 +44,7 @@ text = load_prompt(prompt_file)
 # Créer le modèle Markovify
 model = markovify.Text(text)
 
-# Générer une phrase aléatoire cas particulier
+# Générer une phrase aléatoire cas particulier nom de dinosaures
 if prompt_file == 'dinosaures_nom.txt':
     sentence = main()
     sentence = sentence.replace(' ','')
@@ -49,6 +52,19 @@ if prompt_file == 'dinosaures_nom.txt':
     ser.write(("----------").encode())
     time.sleep(2)
     ser.write((sentence).encode())
+    print(prompt_file)
+    print(sentence)
+    exit()
+
+# Générer une phrase aléatoire cas particulier mode random
+if prompt_file == "random.txt":
+    lines = open('actionverite.txt').read().splitlines()
+    sentence = random.choice(lines) 
+    time.sleep(2)
+    ser.write(("----------").encode())
+    time.sleep(2)
+    ser.write((sentence).encode())
+    print(prompt_file)
     print(sentence)
     exit()
 
@@ -63,13 +79,13 @@ ser.write(("----------").encode())
 time.sleep(2)
 
 # Fonction pour couper les phrases en groupe de 4
-def splitTextToQuadruplet(string):
+def splitTextToTriplet(string):
     words = string.split()
     grouped_words = [' '.join(words[i: i + 4]) for i in range(0, len(words), 4)]
     return grouped_words
 
 # Envoyer la phrase sur le port série de l'Arduino par groupe de 4
-for groupe in splitTextToQuadruplet(str(sentence)):
+for groupe in splitTextToTriplet(str(sentence)):
     ser.write((groupe).encode())
     time.sleep(3)
 
