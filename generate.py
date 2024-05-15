@@ -12,33 +12,22 @@ def load_prompt(file_path):
         text = f.read()
     return text
 
-# Condition pour le choix de la base de données
-def check_condition(valeur):
-    start_time = time.time()
-    while time.time() - start_time < 2:
-        if condition_est_verifiee(valeur):
-            return True
-        time.sleep(0.5)
-    return False
-
-# Fonction pour vérifier la condition
-def condition_est_verifiee(valeur):
-    return valeur == 0
-
 # Boucle pour définir sur quelle base de donnée on travaille
 while True:
     if ser.in_waiting > 0:
         line = ser.readline().decode('utf-8').rstrip()
         values = line.split(",")
-        analogValueA0 = int(values[0])
-        analogValueA1 = int(values[1])
-        analogValueA2 = int(values[2])
-        if check_condition(analogValueA0)==True:
-            prompt_file = "dinosaures.txt"
-        if check_condition(analogValueA1)==True:
+        analogValueA0 = str(values[0])
+        analogValueA1 = str(values[1])
+        analogValueA2 = str(values[2])
+        if str(analogValueA0) == "0":
             prompt_file = "prompt.txt"
-        if check_condition(analogValueA2)==True:
-            prompt_file = "citations.txt"       
+            break
+        if str(analogValueA1) == "0":
+            prompt_file = "dinosaures.txt"
+            break
+        if str(analogValueA2) == "0":
+            prompt_file = "citations.txt"
         break
 
 # Charger le fichier prompt
@@ -69,5 +58,6 @@ for groupe in splitTextToTriplet(str(sentence)):
     time.sleep(3)
 
 # Ecrire la phrase pour vérifier
+print(prompt_file)
 print(sentence)
 print(splitTextToTriplet(str(sentence)))
