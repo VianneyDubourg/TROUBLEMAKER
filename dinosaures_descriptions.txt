@@ -1,20 +1,75 @@
-Prédateur massif : Il était l'un des plus grands prédateurs terrestres de tous les temps, mesurant jusqu'à 12 mètres de longueur et pesant environ 9 tonnes. Avec ses dents robustes et sa mâchoire puissante, il était capable d'infliger des blessures mortelles à ses proies.
-Carnivore agile : Ce dinosaure était un prédateur redoutable, avec des griffes tranchantes et une intelligence relative.
-Géant herbivore : Reconnaissable pour sa taille impressionnante et son long cou, il se nourrissait principalement de végétaux en atteignant les feuilles des arbres.
-Herbivore cornu : Avec ses trois cornes distinctives sur son visage, il utilisait probablement ses armes pour se défendre contre les prédateurs et lors de combats intra-spécifiques.
-Dinosaure à plaques : Reconnaissable pour les plaques osseuses sur son dos et les pointes sur sa queue, il utilisait probablement ces caractéristiques pour la régulation de la température corporelle et la communication intra-spécifique.
-Armure vivante : Cet herbivore massif était armé d'une masse osseuse à l'extrémité de sa queue, qu'il utilisait probablement pour se défendre contre les prédateurs.
-Crête distinctive : Reconnaissable pour sa crête osseuse distinctive sur son crâne, qui pouvait mesurer jusqu'à 1,5 mètre de longueur, il utilisait probablement cette caractéristique pour la communication et la régulation de la température corporelle.
-Vol majestueux : Avec une envergure pouvant atteindre 7 mètres, il était un des plus grands ptérosaures connus, se nourrissant probablement de poissons qu'il attrapait en vol.
-Prédateur bipède : Mesurant jusqu'à 9 mètres de longueur, il était équipé de dents tranchantes et de griffes acérées.
-Dinosaure à long cou : Mesurant jusqu'à 27 mètres de longueur, il se nourrissait principalement de végétaux et utilisait probablement son long cou pour atteindre les feuilles des arbres.
-Prédateur à griffes : Doté de griffes tranchantes et d'une agilité remarquable, ce prédateur était redoutable dans la chasse aux proies de taille moyenne.
-Herbivore blindé : Avec une carapace épaisse et des rangées de plaques osseuses le long de son dos, cet herbivore était bien protégé contre les attaques des prédateurs.
-Chasseur furtif : Grâce à sa petite taille et à sa rapidité, ce dinosaure carnivore était capable de traquer ses proies en silence avant de les attaquer avec précision.
-Géant des airs : Ce ptérosaure imposant était capable de planer dans les cieux pendant de longues périodes, à la recherche de sa prochaine proie ou de sources de nourriture.
-Le roi des mers : Avec ses mâchoires puissantes et ses dents acérées, ce redoutable prédateur marin régnait en maître dans les océans préhistoriques, chassant les poissons et les autres créatures marines.
-Dinosaure à cornes : Reconnaissable pour ses impressionnantes cornes incurvées, ce dinosaure herbivore utilisait probablement ses armes défensives lors de combats intra-spécifiques pour établir sa dominance.
-Dinosaure à bec : Avec son bec puissant et ses dents pointues, ce dinosaure carnivore était parfaitement adapté à la chasse et à la déchirure de la chair de ses proies.
-Marcheur des marécages : Ce dinosaure bipède habitait les régions marécageuses, où il se nourrissait de plantes aquatiques et de petits animaux.
-Chercheur de trésors : Avec ses longues griffes courbées, ce dinosaure fouillait le sol à la recherche de proies enfouies ou de racines comestibles.
-Géant des forêts : Avec ses membres massifs et son cou élancé, ce dinosaure herbivore se déplaçait lentement à travers les vastes étendues boisées à la recherche de feuilles et de branches tendres à manger.
+Predateur massif : Il etait l'un des plus grands predateurs terrestres de tous les temps, mesurant jusqu'a 12 metres de longueur et pesant environ 9 tonnes. Avec ses dents robustes et sa machoire puissante, il etait capable d'infliger des blessures mortelles a ses proies.
+Carnivore agile : Ce dinosaure etait un predateur redoutable, avec des griffes tranchantes et une intelligence relative.
+Geant herbivore : Reconnaissable pour sa taille impressionnante et son long cou, il se nourrissait principalement de vegetaux en atteignant les feuilles des arbres.
+Herbivore cornu : Avec ses trois cornes distinctives sur son visage, il utilisait probablement ses armes pour se defendre contre les predateurs et lors de combats intra-specifiques.
+Dinosaure a plaques : Reconnaissable pour les plaques osseuses sur son dos et les pointes sur sa queue, il utilisait probablement ces caracteristiques pour la regulation de la temperature corporelle et la communication intra-specifique.
+Armure vivante : Cet herbivore massif etait arme d'une masse osseuse a l'extremite de sa queue, qu'il utilisait probablement pour se defendre contre les predateurs.
+Crete distinctive : Reconnaissable pour sa crete osseuse distinctive sur son crane, qui pouvait mesurer jusqu'a 1,5 metre de longueur, il utilisait probablement cette caracteristique pour la communication et la regulation de la temperature corporelle.
+Vol majestueux : Avec une envergure pouvant atteindre 7 metres, il etait un des plus grands pterosaures connus, se nourrissant probablement de poissons qu'il attrapait en vol.
+Predateur bipede : Mesurant jusqu'a 9 metres de longueur, il etait equipe de dents tranchantes et de griffes acerees.
+Dinosaure a long cou : Mesurant jusqu'a 27 metres de longueur, il se nourrissait principalement de vegetaux et utilisait probablement son long cou pour atteindre les feuilles des arbres.
+Predateur a griffes : Dote de griffes tranchantes et d'une agilite remarquable, ce predateur etait redoutable dans la chasse aux proies de taille moyenne.
+Herbivore blinde : Avec une carapace epaisse et des rangees de plaques osseuses le long de son dos, cet herbivore etait bien protege contre les attaques des predateurs.
+Chasseur furtif : Grace a sa petite taille et a sa rapidite, ce dinosaure carnivore etait capable de traquer ses proies en silence avant de les attaquer avec precision.
+Geant des airs : Ce pterosaure imposant etait capable de planer dans les cieux pendant de longues periodes, a la recherche de sa prochaine proie ou de sources de nourriture.
+Le roi des mers : Avec ses machoires puissantes et ses dents acerees, ce redoutable predateur marin regnait en maitre dans les oceans prehistoriques, chassant les poissons et les autres creatures marines.
+Dinosaure a cornes : Reconnaissable pour ses impressionnantes cornes incurvees, ce dinosaure herbivore utilisait probablement ses armes defensives lors de combats intra-specifiques pour etablir sa dominance.
+Dinosaure a bec : Avec son bec puissant et ses dents pointues, ce dinosaure carnivore etait parfaitement adapte a la chasse et a la dechirure de la chair de ses proies.
+Marcheur des marecages : Ce dinosaure bipede habitait les regions marecageuses, où il se nourrissait de plantes aquatiques et de petits animaux.
+Chercheur de tresors : Avec ses longues griffes courbees, ce dinosaure fouillait le sol a la recherche de proies enfouies ou de racines comestibles.
+Geant des forets : Avec ses membres massifs et son cou elance, ce dinosaure herbivore se deplaçait lentement a travers les vastes etendues boisees a la recherche de feuilles et de branches tendres a manger.
+
+Ce dinosaure bipede est connu pour sa grande taille, ses bras courts avec deux doigts, et ses dents acerees. Il etait un predateur redoutable du Cretace superieur.
+Cet herbivore quadrupede possedait un long cou et une queue tout aussi longue. Son corps massif etait soutenu par de puissantes pattes et il vivait principalement durant le Jurassique.
+Ce dinosaure possedait une grande collerette osseuse et trois cornes sur la tete. Il etait un herbivore quadrupede du Cretace tardif.
+Ce petit dinosaure bipede et carnivore avait une griffe en forme de faucille sur chaque pied, ce qui en faisait un chasseur agile et rapide du Cretace.
+Cet herbivore etait connu pour sa queue ornee de plaques osseuses et de pointes. Il marchait sur quatre pattes et vivait durant le Jurassique.
+Ce dinosaure avait une longue voile sur son dos formee par des epines neurales allongees. Il etait un grand predateur du Cretace inferieur.
+Ce dinosaure bipede et carnivore etait relativement petit avec des plumes. Il est souvent cite comme un exemple de lien entre les dinosaures et les oiseaux.
+Cet herbivore quadrupede avait une tete en forme de dome epais. Il etait protege par cette structure osseuse et vivait principalement durant le Cretace.
+Ce dinosaure bipede avait une crete creuse sur le sommet de sa tete, qu'il utilisait probablement pour produire des sons. Il etait herbivore et vivait durant le Cretace superieur.
+Ce dinosaure herbivore quadrupede possedait une serie d'enormes pointes defensives le long de sa queue, souvent utilisees contre les predateurs. Il vivait durant le Cretace superieur.
+Ce dinosaure carnivore bipede possedait de longs bras avec trois griffes acerees, et une tete relativement petite par rapport a son corps. Il vivait durant le Cretace superieur.
+Cet herbivore quadrupede avait une queue longue et puissante, des pattes robustes et une peau epaisse parsemee de petites epines. Il vivait durant le Jurassique.
+Ce dinosaure etait connu pour sa grande crete osseuse ornant le sommet de son crane, probablement utilisee pour attirer des partenaires ou effrayer les predateurs. Il vivait durant le Cretace superieur.
+Ce petit dinosaure bipede et omnivore avait un bec tranchant et des pattes agiles. Il vivait principalement durant le Cretace inferieur.
+Cet herbivore quadrupede possedait une armure lourde avec des plaques osseuses et de grandes epines le long de son dos et de ses flancs. Il vivait durant le Cretace superieur.
+Ce dinosaure carnivore de taille moyenne avait un museau long et etroit, rempli de dents tranchantes comme des rasoirs. Il chassait principalement durant le Cretace inferieur.
+Cet herbivore bipede possedait un bec corne et une serie de cretes dentelees le long de son dos. Il vivait durant le Cretace superieur.
+Ce dinosaure avait des plumes et des ailes rudimentaires, suggerant une transition evolutive vers les oiseaux. Il vivait durant le Jurassique superieur.
+Cet herbivore quadrupede geant possedait une queue en forme de massue utilisee pour se defendre contre les predateurs. Il vivait durant le Cretace superieur.
+Ce dinosaure bipede et carnivore etait caracterise par une grande crete osseuse sur son museau, qu'il utilisait probablement pour des combats territoriaux. Il vivait durant le Cretace inferieur.
+Cet herbivore quadrupede possedait une serie de larges plaques osseuses sur le dos et une queue avec des pointes tranchantes. Il vivait durant le Jurassique superieur.
+Ce dinosaure carnivore bipede avait une tete massive et des machoires puissantes remplies de dents acerees. Il etait un predateur dominant du Cretace superieur.
+Cet herbivore possedait une longue queue et un cou flexible, ainsi que de larges pattes pour supporter son corps massif. Il vivait durant le Cretace superieur.
+Ce dinosaure bipede et carnivore etait couvert de plumes et possedait de longues griffes sur ses mains. Il est souvent considere comme un lien crucial entre les dinosaures et les oiseaux. Il vivait durant le Cretace.
+Cet herbivore quadrupede possedait de longues epines sur son dos, formant une voile distinctive. Il utilisait probablement cette structure pour la thermoregulation. Il vivait durant le Cretace inferieur.
+Ce dinosaure bipede possedait une crete creuse sur le sommet de son crane, utilisee pour produire des sons de communication. Il etait herbivore et vivait durant le Cretace superieur.
+Cet herbivore quadrupede possedait une armure epaisse avec des plaques osseuses et des pointes sur son dos et sa queue. Il vivait durant le Cretace superieur.
+Ce dinosaure carnivore bipede avait de longues griffes incurvees sur ses mains et une queue robuste pour l'equilibre. Il chassait durant le Cretace inferieur.
+Cet herbivore possedait un long cou et une petite tete, ainsi qu'une grande taille generale. Il vivait durant le Jurassique superieur.
+Ce dinosaure bipede possedait des plumes et une structure osseuse legere, suggerant qu'il pourrait etre capable de planer. Il vivait durant le Cretace superieur.
+Cet herbivore quadrupede etait caracterise par un corps massif et une peau recouverte de petites ecailles. Il vivait durant le Cretace inferieur.
+Ce dinosaure carnivore bipede avait une grande crete osseuse sur son crane et des dents tranchantes. Il vivait durant le Cretace superieur.
+Cet herbivore quadrupede possedait une serie de cornes sur le front et un bec tranchant. Il vivait durant le Cretace superieur.
+Ce dinosaure bipede etait couvert de plumes et avait des ailes developpees, mais il etait probablement incapable de voler. Il vivait durant le Cretace superieur.
+Ce dinosaure carnivore bipede etait dote de dents tranchantes et d'un museau allonge. Il chassait principalement durant le Cretace superieur.
+Cet herbivore possedait un long cou, une petite tete et des pattes robustes pour soutenir son poids. Il vivait durant le Cretace superieur.
+Ce dinosaure bipede et omnivore avait un bec et des griffes puissantes, lui permettant de varier son regime alimentaire. Il vivait durant le Cretace inferieur.
+Cet herbivore quadrupede possedait une collerette osseuse elaboree et trois cornes sur sa tete. Il vivait durant le Cretace superieur.
+Ce dinosaure carnivore bipede etait caracterise par une crete creuse sur son crane et une longue queue. Il vivait durant le Cretace superieur.
+Cet herbivore quadrupede possedait une queue avec des pointes tranchantes et un corps recouvert de plaques osseuses. Il vivait durant le Cretace superieur.
+Ce dinosaure bipede etait couvert de plumes et possedait des griffes acerees sur ses mains. Il vivait durant le Cretace superieur.
+Cet herbivore possedait un long cou, une queue longue et une armure de plaques osseuses le long de son dos. Il vivait durant le Jurassique superieur.
+Ce dinosaure carnivore bipede etait connu pour ses bras puissants et ses griffes acerees, ainsi que sa capacite a courir rapidement. Il vivait durant le Cretace superieur.
+Cet herbivore quadrupede possedait une tete massive avec une collerette osseuse et de longues cornes. Il vivait durant le Cretace superieur.
+Ce dinosaure bipede possedait de longues plumes sur ses bras et sa queue, suggerant qu'il pouvait planer ou glisser. Il vivait durant le Cretace inferieur.
+Cet herbivore quadrupede possedait une queue en forme de massue et un corps couvert de plaques osseuses. Il vivait durant le Cretace superieur.
+Ce dinosaure carnivore bipede etait dote de dents tranchantes et d'un museau allonge. Il chassait principalement durant le Cretace superieur.
+Cet herbivore possedait un long cou, une petite tete et des pattes robustes pour soutenir son poids. Il vivait durant le Cretace superieur.
+Ce dinosaure bipede et omnivore avait un bec et des griffes puissantes, lui permettant de varier son regime alimentaire. Il vivait durant le Cretace inferieur.
+Cet herbivore quadrupede possedait une collerette osseuse elaboree et trois cornes sur sa tete. Il vivait durant le Cretace superieur.
+Ce dinosaure carnivore bipede etait caracterise par une crete creuse sur son crane et une longue queue. Il vivait durant le Cretace superieur.
+Cet herbivore quadrupede possedait une queue avec des pointes tranchantes et un corps recouvert de plaques osseuses. Il vivait durant le Cretace superieur.
+Ce dinosaure bipede etait couvert de plumes et possedait des griffes acerees sur ses mains. Il vivait durant le Cretace superieur.
+Cet herbivore possedait un long cou, une queue longue et une armure de plaques osseuses le long de son dos. Il vivait durant le Jurassique superieur.
