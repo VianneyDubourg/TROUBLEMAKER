@@ -2,7 +2,7 @@ import markovify
 import serial
 import time
 import random
-from fonction_markov import MarkovChain, main
+from markov_apprenant.py import MarkovChain, main
 
 # Connexion au arduino
 ser = serial.Serial('COM3', 9600)  # Assurez-vous de spécifier le bon port série
@@ -23,16 +23,23 @@ while True:
         valeur1 = str(valeurs[1])
         valeur2 = str(valeurs[2])
         if str(valeur0) == "0":
-            prompt_file = "prompt.txt"
+            prompt_file = "actions_verites.txt"
             break
         if str(valeur1) == "0":
-            prompt_file = "dinosaures.txt"
+            prompt_file = "dinosaures_noms.txt"
             break
         if str(valeur2) == "0":
-            prompt_file = "citations.txt"
+            prompt_file = "dinosaures_descriptions.txt"
             break
-        if str(valeurX) == "0":
+        if str(valeur3) == "0":
             prompt_file = "random.txt"
+            break
+        if str(valeur4) == "0":
+            prompt_file = "citations_celebres.txt"
+            break
+        if str(valeur5) == "0":
+            prompt_file = "donnees_participants.txt"
+            break
         prompt_file = "rap.txt"
         break
 
