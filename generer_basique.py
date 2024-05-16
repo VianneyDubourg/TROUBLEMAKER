@@ -1,5 +1,6 @@
 import markovify
 import serial
+import time
 
 # Fonction pour charger le fichier de prompt
 def load_prompt(file_path):
