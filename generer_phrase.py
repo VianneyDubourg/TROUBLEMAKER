@@ -49,7 +49,7 @@ while True:
 texte = charger_donnees(base_de_donnees)
 
 # Cas particulier pour les noms de dinosaures
-# On spécifie la taille des la base de données
+# On spécifie la taille de la base de données
 # On supprime aussi les espaces entre chaque syllabes
 if base_de_donnees == "dinosaures_noms.txt":
     ser.write(("----------").encode())
