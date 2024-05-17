@@ -19,12 +19,10 @@ model = markovify.Text(text)
 
 # Configuration du port série
 ser = serial.Serial('COM3', 9600)  # Remplacez 'COM3' par le port série de votre Arduino
+ser.flush()
 
 # Générer une phrase aléatoire
 sentence = model.make_sentence()
-
-# Attendre un court instant avant de générer la prochaine phrase
-time.sleep(2)
 
 # Envoyer une entête sur le port série de l'Arduino
 ser.write(("----------").encode())
