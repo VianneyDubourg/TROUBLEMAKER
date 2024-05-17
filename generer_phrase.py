@@ -42,8 +42,12 @@ while True:
             break
         if valeur5 == "0":
             base_de_donnees = "donnees_participants.txt"
-        base_de_donnees = "rap.txt" #Cette base de données est prise chaque fois que le bouton n'est pas dans une position valide.
-        break
+            break
+        if valeur6 == "0":
+            base_de_donnees = "rap.txt"
+            break
+        ser.write(("Bouton non valide").encode())
+        exit()
 
 # Charger le fichier sélectionné
 texte = charger_donnees(base_de_donnees)
