@@ -47,6 +47,8 @@ while True:
         if valeur6 == "0":
             base_de_donnees = "rap.txt"
             break
+        ser.write(('----------').encode())
+        time.sleep(3)
         ser.write(("Bouton non valide").encode())
         exit()
 
