@@ -26,6 +26,7 @@ void setup() {
     pinMode(10, INPUT);
     pinMode(9, INPUT);
     pinMode(8, INPUT);
+    pinMode(5, INPUT);
     // Allumage des ports numériques
     digitalWrite(13, HIGH);
     digitalWrite(12, HIGH);
@@ -33,6 +34,7 @@ void setup() {
     digitalWrite(10, HIGH);
     digitalWrite(9, HIGH);
     digitalWrite(8, HIGH);
+    digitalWrite(5,HIGH);
 }
 
 void loop() {
@@ -44,6 +46,7 @@ void loop() {
   int valeur3 = digitalRead(11);
   int valeur4 = digitalRead(12);
   int valeur5 = digitalRead(13);
+  int valeur6 = digitalRead(5);
 
   // Envoyer les valeurs via le port série
   Serial.print(valeur0);
@@ -56,7 +59,9 @@ void loop() {
   Serial.print(",");
   Serial.print(valeur4);
   Serial.print(",");
-  Serial.println(valeur5);
+  Serial.print(valeur5);
+  Serial.print(",");
+  Serial.println(valeur6);
   delay(1000);
   
   // Imprimer les phrases si on reçoit des données
