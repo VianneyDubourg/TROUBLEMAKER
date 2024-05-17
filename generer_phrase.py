@@ -5,6 +5,7 @@ import random
 
 # Connexion au arduino
 ser = serial.Serial('COM3', 9600)  # Assurez-vous de spécifier le bon port série
+ser.flush()
 
 # Fonction pour ouvrir la base de donnée
 def charger_donnees(chemin):
