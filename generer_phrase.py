@@ -25,6 +25,7 @@ while True:
         valeur3 = str(valeurs[3])
         valeur4 = str(valeurs[4])
         valeur5 = str(valeurs[5])
+        valeur6 = str(valeurs[6])
         if valeur0 == "0":
             base_de_donnees = "actions_verites.txt"
             break
