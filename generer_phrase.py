@@ -94,7 +94,7 @@ def splitTextToTriplet(phrase):
     return mots_groupes
 
 # Envoyer la phrase sur le port série de l'Arduino par groupe de 4 ou de 3
-if base_de_donnees == "dinosaures_descriptions.txt" or "random.txt":
+if (base_de_donnees == "dinosaures_descriptions.txt") or (base_de_donnees == "random.txt"):
     for groupe in splitTextToTriplet(str(phrase)):
         ser.write((groupe).encode())
         time.sleep(3)
