@@ -4,7 +4,7 @@ import time
 import random
 
 # Connexion au arduino
-ser = serial.Serial('COM3', 9600)  # Assurez-vous de spécifier le bon port série
+ser = serial.Serial('COM4', 9600)  # Assurez-vous de spécifier le bon port série
 ser.flush()
 
 # Fonction pour ouvrir la base de donnée
@@ -49,7 +49,7 @@ while True:
 texte = charger_donnees(base_de_donnees)
 
 # Cas particulier pour les noms de dinosaures
-# On spécifie la taille de la base de données
+# On spécifie la taille des la base de données
 # On supprime aussi les espaces entre chaque syllabes
 if base_de_donnees == "dinosaures_noms.txt":
     ser.write(("----------").encode())
@@ -87,12 +87,22 @@ def splitTextToQuadruplet(phrase):
     mots_groupes = [' '.join(mots[i: i + 4]) for i in range(0, len(mots), 4)]
     return mots_groupes
 
-# Envoyer la phrase sur le port série de l'Arduino par groupe de 4
-for groupe in splitTextToQuadruplet(str(phrase)):
-    ser.write((groupe).encode())
-    time.sleep(3)
+# Fonction pour couper les phrases en groupe de 3
+def splitTextToTriplet(phrase):
+    mots = phrase.split()
+    mots_groupes = [' '.join(mots[i: i + 3]) for i in range(0, len(mots), 3)]
+    return mots_groupes
+
+# Envoyer la phrase sur le port série de l'Arduino par groupe de 4 ou de 3
+if base_de_donnees == "dinosaures_descriptions.txt" or "random.txt":
+    for groupe in splitTextToTriplet(str(phrase)):
+        ser.write((groupe).encode())
+        time.sleep(3)
+else:
+    for groupe in splitTextToQuadruplet(str(phrase)):
+        ser.write((groupe).encode())
+        time.sleep(3)
 
 # Ecrire la phrase pour vérifier
 print(base_de_donnees)
 print(phrase)
-
