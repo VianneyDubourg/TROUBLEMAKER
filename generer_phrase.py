@@ -111,5 +111,7 @@ else:
         time.sleep(3)
 
 # Ecrire la phrase pour vérifier
-print(base_de_donnees)
-print(phrase)
+underline = '\033[4m'
+end_underline = '\033[0m'
+print(f"{underline}{'La base de données sélectionnée est:'}{' '}{end_underline}{base_de_donnees}")
+print(f"{underline}{'La phrase à imprimer est:'}{' '}{end_underline}{phrase}")
