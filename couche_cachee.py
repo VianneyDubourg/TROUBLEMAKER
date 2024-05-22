@@ -79,8 +79,12 @@ def main():
 
     markov.add_sentences(sentences_to_add)
 
-    for i in range(10):
-        print(markov.generate_sentence())
-
+    for _ in range(5):  # Génère et évalue 5 phrases pour l'exemple
+        generated_sentence = markov.generate_sentence()
+        print(f"Phrase générée: {generated_sentence}")
+        rating = input("Notez cette phrase sur une échelle de 1 à 5: ")
+        markov.rate_sentence(generated_sentence, int(rating))
+    print("Fin de l'évaluation")
+    
 if __name__ == "__main__":
     main()
