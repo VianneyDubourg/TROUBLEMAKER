@@ -16,7 +16,6 @@ void setup() {
   Serial.begin(9600);
   mySerial.begin(9600);
   printer.begin();
-  //printer.setTimes(30000,2100); // Modifie le comportement de l'imprimante
 
   // Choix des ports utilisés par le bouton
     // Passage des ports numériques en receveur
@@ -27,6 +26,7 @@ void setup() {
     pinMode(9, INPUT);
     pinMode(8, INPUT);
     pinMode(5, INPUT);
+    pinMode(4, INPUT);
     // Allumage des ports numériques
     digitalWrite(13, HIGH);
     digitalWrite(12, HIGH);
@@ -35,10 +35,10 @@ void setup() {
     digitalWrite(9, HIGH);
     digitalWrite(8, HIGH);
     digitalWrite(5,HIGH);
+    digitalWrite(4,HIGH);
 }
 
 void loop() {
-
   // Lire les valeurs des ports numériques
   int valeur0 = digitalRead(8);
   int valeur1 = digitalRead(9);
@@ -47,6 +47,7 @@ void loop() {
   int valeur4 = digitalRead(12);
   int valeur5 = digitalRead(13);
   int valeur6 = digitalRead(5);
+  int valeur7 = digitalRead(4);
 
   // Envoyer les valeurs via le port série
   Serial.print(valeur0);
@@ -61,8 +62,10 @@ void loop() {
   Serial.print(",");
   Serial.print(valeur5);
   Serial.print(",");
-  Serial.println(valeur6);
-  delay(1000);
+  Serial.print(valeur6);
+  Serial.print(",");
+  Serial.println(valeur7);
+  delay(100);
   
   // Imprimer les phrases si on reçoit des données
   if (Serial.available() > 0)
@@ -73,6 +76,6 @@ void loop() {
     printer.boldOn();
     printer.println(prompt);
     printer.feed();
-  delay(100);
+  delay(500);
 } 
 }
