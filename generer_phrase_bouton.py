@@ -54,7 +54,7 @@ while True:
         elif valeur2 == "0":
             base_de_donnees = "citations_celebres.txt"
         elif valeur3 == "0":
-            base_de_donnees = "random.txt"
+            base_de_donnees = "aleatoire.txt"
         elif valeur4 == "0":
             base_de_donnees = "dinosaures_noms.txt"
         elif valeur5 == "0":
@@ -102,7 +102,7 @@ while True:
             elif valeur2 == "0":
                 base_de_donnees = "citations_celebres.txt"
             elif valeur3 == "0":
-                base_de_donnees = "random.txt"
+                base_de_donnees = "aleatoire.txt"
             elif valeur4 == "0":
                 base_de_donnees = "dinosaures_noms.txt"
             elif valeur5 == "0":
@@ -141,10 +141,10 @@ while True:
                 # Créer le modèle de Markov
                 modele = markovify.Text(texte)
 
-                # Générer une phrase aléatoire cas particulier mode random
+                # Générer une phrase aléatoire cas particulier mode aleatoire
                 # On choisit une phrase aléatoire
-                if base_de_donnees == "random.txt":
-                    lignes = open('random.txt').read().splitlines()
+                if base_de_donnees == "aleatoire.txt":
+                    lignes = open('aleatoire.txt').read().splitlines()
                     phrase = random.choice(lignes) 
                 else:
                     # Générer une phrase aléatoire avec Markov cas classique
@@ -157,7 +157,7 @@ while True:
                 time.sleep(3)
 
                 # Envoyer la phrase sur le port série de l'Arduino par groupe de 4 ou de 3
-                if (base_de_donnees == "dinosaures_descriptions.txt") or (base_de_donnees == "random.txt"):
+                if (base_de_donnees == "dinosaures_descriptions.txt") or (base_de_donnees == "aleatoire.txt"):
                     for groupe in splitTextToTriplet(str(phrase)):
                         ser.write((groupe).encode("utf-8"))
                         time.sleep(3)
