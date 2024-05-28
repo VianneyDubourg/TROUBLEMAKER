@@ -54,7 +54,7 @@ while True:
         elif valeur2 == "0":
             base_de_donnees = "citations_celebres.txt"
         elif valeur3 == "0":
-            base_de_donnees = "aleatoire.txt"
+            base_de_donnees = "random.txt"
         elif valeur4 == "0":
             base_de_donnees = "dinosaures_noms.txt"
         elif valeur5 == "0":
@@ -71,15 +71,17 @@ while True:
     # Condition de lancement pour lancer l'impression
     if str(valeurs[6]) == "0":
         # Utiliser l'assemblage de plusieurs bases de données uniquement si on en a enregistré plusieurs
-        if len(noms) > 2 or (len(noms) > 1 and "erreur.txt" not in noms) :
+        if len(noms) > 1 or (len(noms) > 0 and "erreur.txt" not in noms) :
             print("Début de l'impression...")
             modeles_utilises = {}
             coef = {}
             i=0
+            # Ajout de chaque bases de données à une base plus grande
             for mots in noms:
-                i+=1
-                modeles_utilises["modele{0}".format(i)] = markovify.Text(charger_donnees(mots))
-                coef["{0}".format(i)] = 1
+                if mots != "erreur.txt":
+                    i+=1
+                    modeles_utilises["modele{0}".format(i)] = markovify.Text(charger_donnees(mots))
+                    coef["{0}".format(i)] = 1
             model_combo = markovify.combine(list(modeles_utilises.values()),list(coef.values()))
             phrase = model_combo.make_sentence()
             ser.write(("----------").encode("utf-8"))
@@ -87,6 +89,8 @@ while True:
             for groupe in splitTextToTriplet(str(phrase)):
                 ser.write((groupe).encode("utf-8"))
                 time.sleep(3)
+            ser.write((' ').encode())
+            time.sleep(3)
             print(f"{underline}{'La base de données sélectionnée est:'}{end_underline}{' '}{noms}")
             print(f"{underline}{'La phrase à imprimer est:'}{end_underline}{' '}{phrase}")
             print("Fin d'impression")
@@ -102,7 +106,7 @@ while True:
             elif valeur2 == "0":
                 base_de_donnees = "citations_celebres.txt"
             elif valeur3 == "0":
-                base_de_donnees = "aleatoire.txt"
+                base_de_donnees = "random.txt"
             elif valeur4 == "0":
                 base_de_donnees = "dinosaures_noms.txt"
             elif valeur5 == "0":
@@ -116,15 +120,24 @@ while True:
             texte = charger_donnees(base_de_donnees)
             
             # Cas particulier pour les noms de dinosaures
-            # On spécifie la taille sur laquelle se base markov pour établir des probabilités
-            # On supprime aussi les espaces entre chaque syllabes
             if base_de_donnees == "dinosaures_noms.txt":
+                # Ecriture de l'entête
                 ser.write(("----------").encode("utf-8"))
+                # Attendre 3s et continuer
                 time.sleep(3)
-                modele = markovify.Text(texte)
+                # Création du modèle de Markov
+                modele = markovify.Text(texte,state_size=1)
+                # Création de la phrase
                 phrase = modele.make_sentence()
+                # Suppression des espaces
                 phrase = phrase.replace(' ','')
+                # Envoie de la phrase
                 ser.write((phrase).encode("utf-8"))
+                # Attendre 3s et continuer
+                time.sleep(3)
+                # Sauter une ligne
+                ser.write((' ').encode())
+                # Attendre 3s et continuer
                 time.sleep(3)
                 print(f"{underline}{'La base de données sélectionnée est:'}{end_underline}{' '}{base_de_donnees}")
                 print(f"{underline}{'La phrase à imprimer est:'}{end_underline}{' '}{phrase}")
@@ -136,15 +149,16 @@ while True:
                 time.sleep(3)
                 ser.write(("Bouton invalide").encode("utf-8"))
                 time.sleep(3)
-            
+                ser.write((' ').encode())
+                time.sleep(3)
             else:
                 # Créer le modèle de Markov
                 modele = markovify.Text(texte)
-
-                # Générer une phrase aléatoire cas particulier mode aleatoire
-                # On choisit une phrase aléatoire
+                # Générer une phrase aléatoire cas particulier mode random
                 if base_de_donnees == "aleatoire.txt":
+                    # Ouverture du fichier
                     lignes = open('aleatoire.txt').read().splitlines()
+                    # Sélection d'une phrase aléatoire
                     phrase = random.choice(lignes) 
                 else:
                     # Générer une phrase aléatoire avec Markov cas classique
@@ -157,15 +171,18 @@ while True:
                 time.sleep(3)
 
                 # Envoyer la phrase sur le port série de l'Arduino par groupe de 4 ou de 3
-                if (base_de_donnees == "dinosaures_descriptions.txt") or (base_de_donnees == "aleatoire.txt"):
+                if (base_de_donnees == "dinosaures_descriptions.txt") or (base_de_donnees == "random.txt"):
                     for groupe in splitTextToTriplet(str(phrase)):
                         ser.write((groupe).encode("utf-8"))
                         time.sleep(3)
+                    ser.write((' ').encode())
+                    time.sleep(3)
                 else:
                     for groupe in splitTextToQuadruplet(str(phrase)):
                         ser.write((groupe).encode("utf-8"))
                         time.sleep(3)
-
+                    ser.write((' ').encode())
+                    time.sleep(3)
                 # Ecrire la phrase pour vérifier
                 print(f"{underline}{'La base de données sélectionnée est:'}{end_underline}{' '}{base_de_donnees}")
                 print(f"{underline}{'La phrase à imprimer est:'}{end_underline}{' '}{phrase}")
