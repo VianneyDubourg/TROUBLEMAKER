@@ -42,10 +42,15 @@ We collected some interesting results of all five categories.
 #### Different games:
   
   Truth or Dare
+  
   Rap quotes
+  
   Famous quote
+  
   Random text
+  
   Dinosaur's name
+  
   Dinosaur's description
 
 
