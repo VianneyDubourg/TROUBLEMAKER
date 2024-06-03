@@ -4,40 +4,57 @@ By Vianney Dubourg and Valentin Baron.
 
 ### Introduction
 
-Trouble Maker is a game-gadget that **generates random prompts for different games using Markov Chain** espacially Truth or Dare game: **running out of prompts is a common pain point of the game**. It is challenging to continuously devise clever prompts yourself and the prompts you can find online are often limited and repetitive in content.
+Trouble Maker is a game gadget designed to address the common pain point of running out of prompts in various games, especially Truth or Dare. It utilizes Markov Chain to generate random prompts, offering a solution to the challenge of continuously devising clever prompts yourself. The prompts available online are often limited and repetitive, making it difficult to keep the game engaging over time. With Trouble Maker, players can enjoy an endless array of fresh and entertaining prompts, enhancing the overall experience of the game.
 
-We propose an innovative way to generate prompts using Markovify — a simple machine learning generator based on Markov Chain. Markovify predicts the next word based upon its previous word, but not the whole sentence. **The fact that this machine learning model doesn't really understand the true meaning of each sentence results in the absurdity of the prompts, and makes it more unpredictable**. By using a series of selected inputs, including both absurd and serious content, Morkovify can generate 'infinite' challenges for the players that are beyond the human imagination.
+We introduce a novel method for generating prompts using Markovify, a straightforward machine learning generator based on Markov Chains. Markovify predicts the next word based on the preceding word rather than the entire sentence. This limitation, where the model doesn't grasp the true meaning of each sentence, leads to the absurdity of the prompts and enhances their unpredictability. By incorporating a diverse range of inputs, from absurd to serious content, Markovify can create an endless array of challenges for players that stretch beyond human imagination.
 
 ### Why Markov Chain? 
 
-A Markov chain is a stochastic model that generate random results based on probability. In the text generating process, a Markov chain model predicts the next word based on the previous word. Compared to pre-trained text generation models like GPT-3, Markov Chain models actually have a very poor understanding of the input text, which means the generated results make less sense. The absurdity of such primitive ML application and the absurdity of the Truth or Dare game itself are just perfect match - “errors” in machine learning can be fun when put into right place.  
-Moreover, the pre-trained ML models are rather complex and heavy, meaning they’re computationally expensive and requires better machine. Heavier model also takes longer to train and run, which would be a nightmare for a game tool. And due to the unpredictable nature of machine learning, there will still be a lot of uncertainty for the result even with a smarter model. 
-Markovify, as a lighter model, is environmentally friendly and easier to use. For a simple purpose as generating truth or dare prompts, Markovify is definitely a better choice. 
+A Markov chain is a stochastic model that generates random results based on probability. In text generation, a Markov chain model predicts the next word based on the previous word. Unlike pre-trained text generation models like GPT-3, Markov Chain models have a very limited understanding of the input text, resulting in outputs that often make less sense. This inherent absurdity makes primitive ML applications a perfect match for the playful nature of the Truth or Dare game – demonstrating that "errors" in machine learning can be entertaining when used appropriately.
+
+Furthermore, pre-trained ML models are complex and resource-intensive, requiring significant computational power and advanced hardware. They also take longer to train and execute, which is impractical for a game tool. Despite their sophistication, these models still produce unpredictable results.
+
+Markovify, being a simpler and lighter model, is more environmentally friendly and user-friendly. For the straightforward task of generating Truth or Dare prompts, Markovify is a superior choice due to its efficiency and ease of use.
 
 
 ### Why a Gadget? 
 
-We propose this small hand-size gadget with a built-in thermal printer for generating each prompt.
-There are plenty of web based or app based tools for truths and dares, just like for many other party games. However, we realized that using these screen based tools can kill so much fun, since these tools often divert the players' attention to the electronic device, which can distract them from the party with incoming messages and other notifications. A party game is meant to bond people together in reality, while electronic devices does exactly the opposite.
-We intend to create a gadget that provides a getaway from the excessive use of electronics lifestyle. With the prompts thermal printed on tips as the interface, the players can be fully concentrated on the reality and more importantly, on each other. 
+We propose a small, hand-sized gadget equipped with a built-in thermal printer for generating each prompt. While there are numerous web-based or app-based tools for Truth or Dare and other party games, these screen-based tools often detract from the fun. They tend to divert players' attention to the electronic device, which can be disruptive due to incoming messages and notifications. A party game should foster real-life connections, whereas electronic devices typically do the opposite.
+
+Our gadget aims to offer a break from the overuse of electronics. By providing prompts printed on slips of paper, this device ensures that players remain fully engaged with the present moment and, more importantly, with each other.
 
 ### Selected input and testing
 
-We used Markovify, a simple and extensible Markov chain generator. The generator can produce sentences based on the user input. For example, if the input is the book Alice in Wonderland, the generated result includes “Alice thought she might as well look and see what was the matter with it.” - reasonable to be considered as a quote from the book but in fact not. To generate Dares, the input needs to be instructive sentences or phrases. First we tested with 260 Dare prompts we collected from some websites - the result looks good, but as the input is quite small, we can clearly see that the model re-grouped the input based on natural language rules. As the Dares we can find online is limited, we started to look for other instructive inputs that can become dares after random combination. Besides, mixing seemingly unrelated input increases the absurdity of the output, and helps to boost the machine’s imagination.
-Categorized input can be used in specific scenarios. For example, a random cocktail recipe generated from a list of cocktail recipes can be used when the players are in a bar, where they can order “adventurous drinks” made out of the generated recipe; a generated workout instruction that doesn’t make sense in terms of exercising can be a funny challenge to do for the game. 
-After testing with a variety of combined input, we selected 8 input sources and put them into 5 categories. The **Truth** and **Traditional Dare**** are generated from truth and dare prompts we gathered from the internet. The **Dark Drinks** are generated from a cocktail recipe database (we extracted the instructive texts from this database, see our code here) and a list of seasonings and sauce. The **Anti-human Workout** is a combination of workout instructions and table manner instructions, which is the most challenging one among the five. Finally, the **Mime** Challenge is a combination of a list of mime ideas we collected from the internet, some meditation scripts, as well as workout instructions and the table manners - combining these four inputs results in surprisingly dramatic prompts. 
+We used Markovify, a simple and extensible Markov chain generator, to produce sentences based on user input. For example, if the input is "Alice in Wonderland," the output might be something like, “Alice thought she might as well look and see what was the matter with it,” which sounds like a quote from the book but is actually generated. To create Dares, we input instructive sentences or phrases. Initially, we tested with 260 Dare prompts collected from websites. The results were promising, but the limited input size led to the model merely reorganizing the input according to natural language rules.
+
+Since available Dares online are limited, we expanded our input to other instructive sources to create more varied and absurd outputs. This approach not only increased the absurdity of the prompts but also enhanced the machine’s creativity.
+
+We categorized inputs for specific scenarios. For instance, a randomly generated cocktail recipe from a list of recipes can be used in a bar, prompting players to order "adventurous drinks" based on the generated recipe. Similarly, a nonsensical workout instruction can serve as a humorous challenge in the game.
+
+After extensive testing with various combined inputs, we selected eight input sources divided into five categories:
+
+  1- Truth and Traditional Dare: Generated from truth and dare prompts collected from the internet.
+  2- Dark Drinks: Created from a cocktail recipe database and a list of seasonings and sauces. We extracted the instructive texts for this category (see our code here).
+  3- Anti-human Workout: A combination of workout instructions and table manners, making it the most challenging category.
+  4- Mime Challenge: A mix of mime ideas, meditation scripts, workout instructions, and table manners, resulting in dramatically surprising prompts.
+
+By using Markovify with these diverse and categorized inputs, we crafted a range of creative and entertaining prompts for various game scenarios.
 
 ### “Fine tuning”
 
-Due to the unpredictable nature of machine learning, its ‘immature’ generating principle and the purpose of our generated output prompts, the outputs do not all make sense to us(human beings). The success rate of an understandable human language sentence is lower than 50% without further modifications. Therefore we have to conduct a series of “fine tuning” procedures to the output by adding up constraints to avoid the nonsense or error sentences. 
-We modified the Python script to clean up the input text by removing unnecessary symbols and spaces based on different input. For example, the truth input comes with numbered bullets, and the cocktail recipe has a lot of “\n” and “\r” codes within the text.  
+Due to the unpredictable nature of machine learning and the 'immature' generating principle of our model, the generated output prompts often do not make complete sense to humans. The success rate for producing understandable sentences is below 50% without further modifications. Therefore, we implemented a series of "fine-tuning" procedures to enhance the quality of the output by adding constraints to minimize nonsensical or erroneous sentences.
 
-However we still cannot guarantee that 100% of the generated prompts are understandable even after the fine tuning process. Also, as long as the input is big enough, we can’t tell whether we’ll get the same result again or not. So there should be a fault tolerance rate of 10-26% based on the different input categories. 
+We modified the Python script to clean up the input text, removing unnecessary symbols and spaces specific to each input type. For example, truth inputs often come with numbered bullets, and cocktail recipes contain many “\n” and “\r” codes within the text.
+
+Despite these adjustments, we cannot guarantee that 100% of the generated prompts will be understandable, even after fine-tuning. Additionally, with a large enough input, the results can vary widely, and it’s difficult to predict if the same prompt will be generated again. Consequently, there should be a fault tolerance rate of 10-26%, depending on the input categories.
 
 ### Generated results Showcase
 
-From the result, we can see that the mime challenge, anti-human workout and dark drinks are especially successful, as Markovify managed to convert the serious input into absurd prompts. The traditional dares are generated from collected dare prompts from the internet, we can see the machine is attempting to reorganize the limited input to generate new sentences. 
-We collected some interesting results of all five categories.
+From our analysis, it's evident that the Truth or Dare challenges, dinosaur names, and rap quotes yield particularly successful results. Markovify effectively transforms serious input into absurd prompts in these categories.
+
+For traditional dares generated from collected prompts online, the machine attempts to reorganize the limited input to generate new sentences, albeit with varying degrees of success.
+
+We've gathered some intriguing results from all five categories, showcasing the diversity and creativity of the generated prompts.
 
 #### Different games:
   
