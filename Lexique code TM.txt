@@ -1,0 +1,20 @@
+Python :
+
+    Serial : bibliothèque importée permettant d'échanger des informations entre PC et Arduino.
+    'COM4' : nom du port du PC connecté à l'Arduino.
+    ser.flush() : confirme l'envoi de toutes les données.
+    if (SI) : pose une condition pour continuer le code.
+    elif (SINON SI) : pose une autre condition si la précédente n'est pas valide.
+    else (SINON) : lance la suite du code si toutes les autres conditions ne sont pas valides.
+    == : condition d'égalité entre deux variables (VRAI ou FAUX).
+    def XXXXX : définition d'une fonction réutilisable dans la suite du code.
+    open(chemin, "r", encoding="utf-8") : lit le fichier situé à "chemin" avec comme codage "utf-8" ("r" pour read).
+    with open(XXXXX) as f : définit f comme le fichier lu par la fonction open.
+    return : renvoie une variable choisie.
+    markovify : bibliothèque importée pour utiliser le modèle de Markov.
+
+Arduino :
+
+    void setup() : paramétrage de la carte Arduino.
+    void loop() : code exécuté en continu (boucle).
+    Serial.available() : vérifie si des données sont envoyées à l'Arduino.
