@@ -1,6 +1,7 @@
 # Trouble Maker: A Truth or Dare generator based on Markov Chain
 
 By Vianney Dubourg and Valentin Baron. 
+Inspired by Yuqing Liang and Yibo Fu.
 
 ### Introduction
 
