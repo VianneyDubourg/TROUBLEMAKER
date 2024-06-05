@@ -33,10 +33,11 @@ We categorized inputs for specific scenarios. For instance, a randomly generated
 
 After extensive testing with various combined inputs, we selected eight input sources divided into five categories:
 
-  1- Truth and Traditional Dare: Generated from truth and dare prompts collected from the internet.
-  2- Dark Drinks: Created from a cocktail recipe database and a list of seasonings and sauces. We extracted the instructive texts for this category (see our code here).
-  3- Anti-human Workout: A combination of workout instructions and table manners, making it the most challenging category.
-  4- Mime Challenge: A mix of mime ideas, meditation scripts, workout instructions, and table manners, resulting in dramatically surprising prompts.
+  1- Truth or Dare: Generated from truth and dare prompts collected from the internet.
+  2- Rap quotes: Selected on the Internet with ChatGPT.
+  3- Famous quotes: Selected on the Internet with ChatGPT.
+  4- Random text: Selected on the Internet with ChatGPT.
+  5- Dinosaur's names/descriptions: Selected on the Internet with ChatGPT.
 
 By using Markovify with these diverse and categorized inputs, we crafted a range of creative and entertaining prompts for various game scenarios.
 
@@ -62,7 +63,7 @@ We've gathered some intriguing results from all five categories, showcasing the 
   
   Rap quotes
   
-  Famous quote
+  Famous quotes
   
   Random text
   
