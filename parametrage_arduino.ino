@@ -71,11 +71,17 @@ void loop() {
   if (Serial.available() > 0)
   {
     Adafruit_Thermal warm_up(heat_time);
+    // Créer une nouvelle variable en lisant la phrase envoyée par le PC
     prompt = Serial.readString();
+    // Paramétrer l'interligne
     printer.setLineHeight(20);
+    // Ecrire en gras
     printer.boldOn();
+    // Imprimer la phrase
     printer.println(prompt);
+    // Sauter une ligne
     printer.feed();
+  // Attendre une demie seconde
   delay(500);
 } 
 }
