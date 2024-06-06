@@ -18,7 +18,7 @@ void setup() {
   printer.begin();
 
   // Choix des ports utilisés par le bouton
-    // Passage des ports numériques en receveur
+    // Passer des ports numériques en receveur
     pinMode(13, INPUT);
     pinMode(12, INPUT);
     pinMode(11, INPUT);
@@ -27,7 +27,7 @@ void setup() {
     pinMode(8, INPUT);
     pinMode(5, INPUT);
     pinMode(4, INPUT);
-    // Allumage des ports numériques
+    // Allumer des ports numériques
     digitalWrite(13, HIGH);
     digitalWrite(12, HIGH);
     digitalWrite(11, HIGH);
