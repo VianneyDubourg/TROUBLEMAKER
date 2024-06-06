@@ -44,8 +44,8 @@ while True:
     valeur3 = str(valeurs[3])
     valeur4 = str(valeurs[4])
     valeur5 = str(valeurs[5])
-    valeur6 = str(valeurs[6])
-    valeur7 = str(valeurs[7])
+    valeur6 = str(valeurs[6]) #Bouton jaune
+    valeur7 = str(valeurs[7]) #Bouton rouge
     
     # Condition sur l'assemblage de plusieurs bases de données
     if str(valeurs[7]) == "0":
