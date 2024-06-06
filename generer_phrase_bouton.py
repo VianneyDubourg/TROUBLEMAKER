@@ -5,6 +5,8 @@ import random
 
 # Connexion au arduino
 ser = serial.Serial('COM4', 9600)  # Remplacer COM4 par votre port série
+
+# Confirmer l'envoie de toutes les données
 ser.flush()
 
 # Fonction pour ouvrir la base de donnée
@@ -33,7 +35,7 @@ def splitTextToTriplet(phrase):
 modeles = []
 noms = []
 while True:
-    # Récolte des informations envoyées par l'arduino
+    # Récolter les informations envoyées par l'arduino
     line = ser.readline().decode('latin-1').rstrip()
     valeurs = line.split(",")
     valeur0 = str(valeurs[0])
@@ -61,7 +63,7 @@ while True:
             base_de_donnees = "rap.txt"
         else:
             base_de_donnees = "erreur.txt"
-        # Ajout de la base de données aux modèles
+        # Ajouter de la base de données aux modèles
         if base_de_donnees not in noms and base_de_donnees != "dinosaures_noms.txt":
             noms.append(base_de_donnees)
             texte_ajout = charger_donnees(base_de_donnees)
@@ -76,24 +78,33 @@ while True:
             modeles_utilises = {}
             coef = {}
             i=0
-            # Ajout de chaque bases de données à une base plus grande
+            # Ajouter de chaque bases de données à une base plus grande
             for mots in noms:
                 if mots != "erreur.txt":
                     i+=1
                     modeles_utilises["modele{0}".format(i)] = markovify.Text(charger_donnees(mots))
                     coef["{0}".format(i)] = 1
+            # Créer du modèle avec toutes les bases de données
             model_combo = markovify.combine(list(modeles_utilises.values()),list(coef.values()))
+            # Générer une phrase aléatoire
             phrase = model_combo.make_sentence()
+            # Envoyer l'entête
             ser.write(("----------").encode("utf-8"))
+            # Attendre 3s et continuer
             time.sleep(3)
+            # Envoyer les phrases par groupe de 4
             for groupe in splitTextToTriplet(str(phrase)):
                 ser.write((groupe).encode("utf-8"))
                 time.sleep(3)
+            # Sauter une ligne pour une meilleur visibilité
             ser.write((' ').encode())
+            # Attendre 3s et continuer
             time.sleep(3)
+            # Ecrire la phrase dans python pour vérifier
             print(f"{underline}{'La base de données sélectionnée est:'}{end_underline}{' '}{noms}")
             print(f"{underline}{'La phrase à imprimer est:'}{end_underline}{' '}{phrase}")
             print("Fin d'impression")
+            # Réinitialiser des modèles utilisés
             modeles = []
             noms = []
 
@@ -121,17 +132,17 @@ while True:
             
             # Cas particulier pour les noms de dinosaures
             if base_de_donnees == "dinosaures_noms.txt":
-                # Ecriture de l'entête
+                # Ecrire de l'entête
                 ser.write(("----------").encode("utf-8"))
                 # Attendre 3s et continuer
                 time.sleep(3)
-                # Création du modèle de Markov
+                # Créer du modèle de Markov
                 modele = markovify.Text(texte,state_size=1)
-                # Création de la phrase
+                # Créer de la phrase
                 phrase = modele.make_sentence()
-                # Suppression des espaces
+                # Supprimer les espaces
                 phrase = phrase.replace(' ','')
-                # Envoie de la phrase
+                # Envoyer de la phrase
                 ser.write((phrase).encode("utf-8"))
                 # Attendre 3s et continuer
                 time.sleep(3)
@@ -139,17 +150,24 @@ while True:
                 ser.write((' ').encode())
                 # Attendre 3s et continuer
                 time.sleep(3)
+                # Ecrire la phrase dans python pour vérifier
                 print(f"{underline}{'La base de données sélectionnée est:'}{end_underline}{' '}{base_de_donnees}")
                 print(f"{underline}{'La phrase à imprimer est:'}{end_underline}{' '}{phrase}")
                 print("Fin d'impression")
             
             elif base_de_donnees == "erreur.txt":
                 print("erreur bouton")
+                # Ecriture de l'entête
                 ser.write(("----------").encode("utf-8"))
+                # Attendre 3s et continuer
                 time.sleep(3)
+                # Envoyer un message d'erreur
                 ser.write(("Bouton invalide").encode("utf-8"))
+                # Attendre 3s et continuer
                 time.sleep(3)
+                # Sauter une ligne
                 ser.write((' ').encode())
+                # Attendre 3s et continuer
                 time.sleep(3)
             else:
                 # Créer le modèle de Markov
@@ -183,7 +201,7 @@ while True:
                         time.sleep(3)
                     ser.write((' ').encode())
                     time.sleep(3)
-                # Ecrire la phrase pour vérifier
+                # Ecrire la phrase dans python pour vérifier
                 print(f"{underline}{'La base de données sélectionnée est:'}{end_underline}{' '}{base_de_donnees}")
                 print(f"{underline}{'La phrase à imprimer est:'}{end_underline}{' '}{phrase}")
                 print("Fin d'impression")
